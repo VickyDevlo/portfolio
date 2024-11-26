@@ -1,3 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Lobster", sans-serif;
+}
+.top-shadow {
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #ad9bf7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6610f2;
+  border-radius: 2px;
+}
