@@ -5,11 +5,11 @@ import { Typewriter } from "react-simple-typewriter";
 const Banner = () => {
 
   return (
-    <div className="w-full px-2 py-4 h-screen">
+    <div className="w-full px-2 py-4">
       <div className="flex flex-col md:flex-row items-center md:items-start justify-evenly gap-6">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <div className="text-xl md:text-7xl font-medium md:tracking-[12px]">
-            <p>Hi, There!</p>
+          <div className="text-2xl md:text-7xl font-medium md:tracking-[12px]">
+            <p >Hi, There!</p>
             <span>I'm Pranav Magare</span>
           </div>
           <div className="w-full text-center text-base md:text-4xl mt-3 text-blue-700">
