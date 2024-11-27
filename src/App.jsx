@@ -8,15 +8,15 @@ import PageUp from "./shared/pageUp/PageUp";
 function App() {
   const { isDarkMode } = useTheme();
   useScrollToTop();
-  
+
   return (
     <div
-      className={`min-h-screen transition-colors duration-500 ${
+      className={` transition-colors duration-500 ${
         isDarkMode ? "bg-darkBg text-darkText" : "bg-lightBg text-lightText"
       }`}
     >
       <Header />
-      <main className="container mx-auto">
+      <main>
         <PageUp />
         <Router />
       </main>

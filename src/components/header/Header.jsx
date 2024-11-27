@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import { navlinks } from "../../config/navLinks";
 import ThemeToggle from "../themeToggle/ThemeToggle";
+import { Logo } from "../../shared/logo/Logo";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,10 @@ const Header = () => {
 
   return (
     <header className={`sticky top-0 z-20 shadow-lg backdrop-blur-md`}>
-      <div className={`w-full md:h-16 h-14 flex justify-center items-center`}>
+      <div
+        className={`w-full md:h-16 h-10 flex justify-center items-center px-4`}
+      >
+        <Logo />
         <div className="container flex items-center md:justify-center px-4 py-2">
           <nav>
             <ul
@@ -43,8 +47,8 @@ const Header = () => {
               {navlinks.map((item, index) => (
                 <li
                   key={index}
-                  className={`cursor-pointer flex items-center justify-between w-full p-1 md:py-0 font-medium md:hover:text-[#805eb6] tracking-[3px]
-                   text-lg md:text-2xl hover:bg-gray-400 md:hover:bg-transparent rounded-md ${
+                  className={`cursor-pointer flex items-center justify-between w-full p-1 md:py-0 font-bold md:hover:text-[#805eb6] tracking-[5px]
+                   text-lg md:text-2xl hover:bg-gray-400 md:hover:bg-transparent rounded-md transition-all duration-100 ${
                      currentPath === item.path
                        ? "text-gray-200 md:text-[#6610f2] md:bg-transparent"
                        : "text-black md:text-current"
@@ -66,9 +70,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="pr-5 md:pr-5">
-          <ThemeToggle />
-        </div>
+        <ThemeToggle />
       </div>
     </header>
   );

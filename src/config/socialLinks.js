@@ -1,4 +1,4 @@
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaInstagram } from "react-icons/fa";
 export const socialLinks = [
   {
     handler: "LinkedIn",
@@ -9,5 +9,10 @@ export const socialLinks = [
     handler: "gitHub",
     icon: FaGithub,
     path: "https://github.com/VickyDevlo",
+  },
+  {
+    handler: "instagram",
+    icon: FaInstagram,
+    path: "https://www.instagram.com/",
   },
 ];

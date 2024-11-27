@@ -1,12 +1,14 @@
 import React from "react";
+import Banner from "./banner/Banner";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
+import Intro from "../../components/intro/Intro";
+import { contentData } from "../../config/contentData";
 
 const Home = () => {
   return (
     <Wrapper>
-      <div>
-        <h1>This is Home Page.</h1>
-      </div>
+      <Banner />
+      <Intro content={contentData} />
     </Wrapper>
   );
 };

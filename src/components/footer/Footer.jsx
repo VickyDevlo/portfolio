@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <div className={`top-shadow`}>
       <div className="container mx-auto w-full flex flex-col md:flex-row justify-around items-center py-2">
-        <p className="hidden md:block text-[#6610f2] md:text-sm tracking-widest underline">
+        <p className="hidden md:block text-blue-700 md:text-sm tracking-widest underline">
           Developed by Pranav Magare
         </p>
         <p className="text-sm md:text-lg tracking-[3px]">
           &copy; {currentYear} All rights reserved.
         </p>
-        <div className="flex gap-5 md:gap-10 py-2">
+        <div className="flex gap-5 md:gap-10 pt-2">
           {socialLinks.map((links, i) => (
             <Link
               to={links.path}
