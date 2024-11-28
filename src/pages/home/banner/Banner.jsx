@@ -3,16 +3,17 @@ import homeSvg from "../../../assets/home_svg.svg";
 import { Typewriter } from "react-simple-typewriter";
 
 const Banner = () => {
-
   return (
     <div className="w-full px-2 py-4">
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-evenly gap-6">
+      <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <div className="text-2xl md:text-7xl font-medium md:tracking-[12px]">
-            <p >Hi, There!</p>
-            <span>I'm Pranav Magare</span>
+          <div className="text-[26px] md:text-7xl font-medium md:tracking-[12px]">
+            <p className="whitespace-nowrap">Hi, There!</p>
+            <p>
+              I'm <span className="text-[#6610f2]">Pranav Magare</span>
+            </p>
           </div>
-          <div className="w-full text-center text-base md:text-4xl mt-3 text-blue-700">
+          <div className="w-full text-center text-base md:text-4xl my-3">
             <Typewriter
               words={["React Developer", "Frontend Developer"]}
               loop={Infinity}

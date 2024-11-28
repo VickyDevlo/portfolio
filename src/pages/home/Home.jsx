@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Wrapper>
       <Banner />
-      <Intro content={contentData} />
+      <Intro content={contentData} introHeading={"Passionate Developer"} />
     </Wrapper>
   );
 };

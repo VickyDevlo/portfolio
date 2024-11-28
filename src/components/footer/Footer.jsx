@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { socialLinks } from "../../config/socialLinks";
+import { SocialLinks } from "../../shared/socialLinks/SocialLinks";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -14,18 +13,7 @@ const Footer = () => {
         <p className="text-sm md:text-lg tracking-[3px]">
           &copy; {currentYear} All rights reserved.
         </p>
-        <div className="flex gap-5 md:gap-10 pt-2">
-          {socialLinks.map((links, i) => (
-            <Link
-              to={links.path}
-              target="_blank"
-              key={i}
-              className="rounded-full bg-[#3a1d67] text-white p-2"
-            >
-              <links.icon className="text-sm md:text-base" />
-            </Link>
-          ))}
-        </div>
+        <SocialLinks bgColor={"bg-[#3a1d67]"} textColor={"text-white"} />
       </div>
     </div>
   );

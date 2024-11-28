@@ -1,10 +1,11 @@
 import React from "react";
+import { SocialLinks } from "../../shared/socialLinks/SocialLinks";
 
-const Intro = ({ content }) => {
+const Intro = ({ content, introHeading }) => {
   return (
     <section className="py-6 px-5 md:px-0">
-      <h2 className="text-xl md:text-5xl text-center underline text-blue-700 font-bold md:mb-12 mb-6 px-3">
-        Passionate Developer
+      <h2 className="text-xl md:text-5xl text-center underline text-[#6610f2] font-bold md:mb-12 mb-6 px-3 md:tracking-[10px]">
+        {introHeading}
       </h2>
       <div className="mx-auto text-center">
         <p className="text-lg md:text-2xl mb-6 max-w-5xl mx-auto">
@@ -30,6 +31,12 @@ const Intro = ({ content }) => {
         <p className="text-lg md:text-2xl mb-6 max-w-3xl mx-auto">
           {content.closingText}
         </p>
+      </div>
+      <div className="flex items-center justify-center flex-col gap-4 mt-8">
+        <h6 className="underline text-base md:text-3xl text-[#6610f2] font-bold">
+          Feel free to connect
+        </h6>
+        <SocialLinks bgColor={"bg-blue-700"} textColor={"text-white"} />
       </div>
     </section>
   );

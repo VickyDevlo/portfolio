@@ -13,6 +13,6 @@ export const socialLinks = [
   {
     handler: "instagram",
     icon: FaInstagram,
-    path: "https://www.instagram.com/",
+    path: "https://www.instagram.com/pranav_magare",
   },
 ];
