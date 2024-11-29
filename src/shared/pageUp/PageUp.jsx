@@ -33,7 +33,7 @@ const PageUp = () => {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 md:right-5 md:bottom-16 z-10 transition-opacity duration-300 outline-none ${
+      className={`fixed bottom-4 right-4 md:right-5 md:bottom-16 z-10 transition-colors duration-500 outline-none ${
         isDarkMode ? "bg-lightBg" : "bg-darkBg"
       } rounded-full cursor-pointer ${
         isVisible ? "opacity-70" : "opacity-0 pointer-events-none"
