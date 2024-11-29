@@ -38,7 +38,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="py-12 px-1 md:px-10 rounded-lg shadow-md">
+      <div className=" mt-10 px-1 md:px-10 rounded-lg shadow-lg">
         <SkillsExpertise />
       </div>
     </Wrapper>
