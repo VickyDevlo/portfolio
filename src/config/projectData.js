@@ -1,5 +1,5 @@
-import movixPic from "../assets/SharedScreenshot_movies.jpg"; 
-import imagifyPic from "../assets/SharedScreenshot_imagify.jpg"; 
+import movixPic from "../assets/SharedScreenshot_movies.jpg";
+import imagifyPic from "../assets/SharedScreenshot_imagify.jpg";
 import smrPic from "../assets/SharedScreenshot_smr.jpg";
 
 export const projectData = [
