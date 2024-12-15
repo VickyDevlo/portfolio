@@ -9,7 +9,7 @@ export const projectData = [
     description:
       "Turn your imagination into visual art in seconds - just type, and watch the magic happen",
     image: imagifyPic,
-    demoLink: "https://sass-image-generator.vercel.app",
+    demoLink: "https://image-generator-blond.vercel.app",
   },
   {
     id: 2,
