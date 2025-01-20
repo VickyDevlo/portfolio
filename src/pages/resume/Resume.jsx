@@ -7,15 +7,19 @@ import resume_pic from "../../assets/resume_Pic.svg";
 
 const Resume = () => {
   const handleDownload = () => {
-    const fileName = "pranav_resume.pdf";
+    console.log(pranav_resume);
+    
     const link = document.createElement("a");
-    console.log("fileName", fileName);
 
-    link.href = fileName;
-    console.log("href", link.href);
-    link.download = pranav_resume;
-    console.log("download:", link.download);
+    const fileName = "pranav_resume.pdf";
+
+    console.log("first", pranav_resume);
+
+    link.href = pranav_resume;
+    link.download = fileName;
     link.click();
+    console.log("fileName:", fileName);
+    console.log("last:", link.download);
   };
 
   return (
