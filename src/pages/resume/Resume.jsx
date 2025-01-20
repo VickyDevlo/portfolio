@@ -6,17 +6,24 @@ import resume_pic from "../../assets/resume_Pic.svg";
 
 const Resume = () => {
   const handleDownload = () => {
-    console.log("first", pranav_resume);
+    console.log('first', pranav_resume);
+    
+    if (!pranav_resume) {
+      console.error("Resume file is missing!");
+      return;
+    }
 
     const link = document.createElement("a");
 
-    const fileName = pranav_resume.split("/").pop();
-
+    // Define the file name explicitly, e.g., 'pranav_resume.pdf'
+    const fileName = "pranav_resume.pdf";
+    
     link.href = pranav_resume;
-    link.download = fileName;
+    link.download = fileName;  // Set a custom name for the file
     link.click();
-    console.log("last", link.download);
-  };
+    console.log('last.', link.download);
+};
+
 
   return (
     <Wrapper>
