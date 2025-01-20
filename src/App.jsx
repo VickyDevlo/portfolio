@@ -4,12 +4,13 @@ import { Router } from "./components/Router";
 import { useTheme } from "./context/ThemeContext";
 import { useScrollToTop } from "./hooks/useScrollUp";
 import PageUp from "./shared/pageUp/PageUp";
-import pranav_resume from './assets/pranav_resume.pdf'
+import pranav from "./assets/resume.pdf";
 
 function App() {
+  console.log("pranav", pranav);
+  
   const { isDarkMode } = useTheme();
   useScrollToTop();
-console.log('pranav_resume:', pranav_resume);
 
   return (
     <div
