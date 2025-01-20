@@ -13,10 +13,9 @@ const Resume = () => {
 
     const link = document.createElement("a");
     link.href = pranav_resume;
-    link.download = "pranav_resume.pdf";
+    link.download = pranav_resume;
     link.click();
     console.log(link.download);
-    
   };
 
   return (
