@@ -1,5 +1,5 @@
 import React from "react";
-import pranav_resume from "../../assets/pranav_resume.pdf";
+import pranav_resume from "../../assets/resume.pdf";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
 import { FaFileDownload } from "react-icons/fa";
 import resume_pic from "../../assets/resume_Pic.svg";
