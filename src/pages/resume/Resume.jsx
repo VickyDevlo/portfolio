@@ -1,19 +1,19 @@
 import React from "react";
-import pranav_resume from "../../assets/pranav_resume.pdf";
+import pranav from "../../assets/pranav_resume.pdf";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
 import { FaFileDownload } from "react-icons/fa";
 import resume_pic from "../../assets/resume_Pic.svg";
 
 const Resume = () => {
   const handleDownload = () => {
-    if (!pranav_resume) {
+    if (!pranav) {
       console.error("Resume file is missing!");
       return;
     }
 
     const link = document.createElement("a");
-    link.href = pranav_resume;
-    link.download = "pranav_resume.pdf";
+    link.href = pranav;
+    link.download = "pranav.pdf";
 
     document.body.appendChild(link);
     link.click();
