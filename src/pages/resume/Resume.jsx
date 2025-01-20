@@ -7,14 +7,9 @@ import resume_pic from "../../assets/resume_Pic.svg";
 
 const Resume = () => {
   const handleDownload = () => {
-    if (!sample_resume) {
-      console.error("Resume file is missing!");
-      return;
-    }
-
+    const fileName = "sample_resume.pdf";
     const link = document.createElement("a");
 
-    const fileName = "sample_resume.pdf";
     console.log("first", fileName);
 
     link.href = sample_resume;
