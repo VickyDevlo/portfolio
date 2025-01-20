@@ -8,17 +8,28 @@ import resume_pic from "../../assets/resume_Pic.svg";
 const Resume = () => {
   const handleDownload = () => {
     console.log(pranav_resume);
-    
+ 
+    if (!pranav_resume) {
+      console.error("Resume file is missing!");
+      return;
+    }
+
     const link = document.createElement("a");
+ 
+    const fileName = "pranav_resume.pdf";  
+    const urlParts = pranav_resume.split("/");
+    const lastPart = urlParts[urlParts.length - 1];
 
-    const fileName = "pranav_resume.pdf";
-
-    console.log("first", pranav_resume);
+     
+    const correctedFileName = lastPart.includes(".") ? lastPart : `${fileName}`;
 
     link.href = pranav_resume;
-    link.download = fileName;
+
+    link.download = correctedFileName;  
+
     link.click();
-    console.log("fileName:", fileName);
+    console.log("fileName:", correctedFileName);
+    console.log("urlParts:", urlParts);
     console.log("last:", link.download);
   };
 
