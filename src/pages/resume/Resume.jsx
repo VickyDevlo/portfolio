@@ -13,7 +13,7 @@ const Resume = () => {
 
     link.href = fileName;
     console.log("href", link.href);
-    link.download = pranav_resume.pdf;
+    link.download = pranav_resume;
     console.log("download:", link.download);
     link.click();
   };
