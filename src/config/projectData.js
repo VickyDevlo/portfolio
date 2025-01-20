@@ -6,7 +6,7 @@ import JobPortalPic from "../assets/SharedScreenshot_jobPortal.jpg";
 export const projectData = [
   {
     id: 1,
-    title: "Explore Top IT Jobs | Job Portal",
+    title: "Explore Top IT Jobs",
     description:
       "Find the best IT job opportunities in software development, cybersecurity, data science, and more. Connect with leading tech companies and build your dream. Start applying today!",
     image: JobPortalPic,

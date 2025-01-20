@@ -32,12 +32,6 @@ const Intro = ({ content, introHeading }) => {
           {content.closingText}
         </p>
       </div>
-      <div className="flex items-center justify-center flex-col gap-4 mt-8">
-        <h6 className="underline text-base md:text-3xl text-[#6610f2] font-bold">
-          Feel free to connect
-        </h6>
-        <SocialLinks bgColor={"bg-blue-700"} textColor={"text-white"} />
-      </div>
     </section>
   );
 };
