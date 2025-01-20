@@ -1,14 +1,12 @@
 import React from "react";
 import pranav_resume from "../../assets/pranav_resume.pdf";
-import sample_resume from '../../assets/sample-resume.pdf'
+import sample_resume from "../../assets/sample-resume.pdf";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
 import { FaFileDownload } from "react-icons/fa";
 import resume_pic from "../../assets/resume_Pic.svg";
 
 const Resume = () => {
   const handleDownload = () => {
-    console.log('first', sample_resume);
-    
     if (!sample_resume) {
       console.error("Resume file is missing!");
       return;
@@ -16,16 +14,15 @@ const Resume = () => {
 
     const link = document.createElement("a");
 
-    // Define the file name explicitly, e.g., 'pranav_resume.pdf'
-    const fileName = "sample_resume";
-    
-    link.href = sample_resume;
-    link.download = fileName;  // Set a custom name for the file
-    link.click();
-    console.log('fileName.', fileName);
-    console.log('last.', link.download);
-};
+    const fileName = "sample_resume.pdf";
+    console.log("first", fileName);
 
+    link.href = sample_resume;
+    link.download = fileName;
+    link.click();
+    console.log("fileName:", fileName);
+    console.log("last:", link.download);
+  };
 
   return (
     <Wrapper>
