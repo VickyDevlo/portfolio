@@ -13,11 +13,12 @@ const Resume = () => {
 
     const link = document.createElement("a");
     link.href = pranav_resume;
-    link.download = "pranav_resume.pdf";
+    link.download = "pranav_resume";
 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    console.log(" link.download", link.download);
   };
 
   return (
