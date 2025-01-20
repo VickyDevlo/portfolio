@@ -9,14 +9,13 @@ const Resume = () => {
   const handleDownload = () => {
     const fileName = "sample_resume.pdf";
     const link = document.createElement("a");
+    console.log("fileName", fileName);
 
-    console.log("first", fileName);
-
-    link.href = sample_resume;
+    link.href = fileName;
+    console.log("href", link.href);
     link.download = fileName;
+    console.log("download:", link.download);
     link.click();
-    console.log("fileName:", fileName);
-    console.log("last:", link.download);
   };
 
   return (
