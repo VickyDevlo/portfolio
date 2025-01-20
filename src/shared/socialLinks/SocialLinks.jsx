@@ -1,12 +1,13 @@
 import React from "react";
 import { socialLinks } from "../../config/socialLinks";
+import { Link } from "react-router-dom";
 
 export const SocialLinks = ({ bgColor, textColor }) => {
   return (
     <div className="flex gap-5 md:gap-8 mt-3">
       {socialLinks.map((links, i) => (
-        <a
-          href={links.path}
+        <Link
+          to={links.path}
           target="_blank"
           key={i}
           className={`rounded-full ${bgColor} ${textColor} p-2`}
@@ -15,7 +16,7 @@ export const SocialLinks = ({ bgColor, textColor }) => {
           }}
         >
           <links.icon className="text-sm md:text-base" />
-        </a>
+        </Link>
       ))}
     </div>
   );
