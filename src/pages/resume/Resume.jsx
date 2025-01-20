@@ -16,11 +16,12 @@ const Resume = () => {
     const link = document.createElement("a");
 
     // Define the file name explicitly, e.g., 'pranav_resume.pdf'
-    const fileName = "pranav_resume.pdf";
+    const fileName = "pranav_resume";
     
     link.href = pranav_resume;
     link.download = fileName;  // Set a custom name for the file
     link.click();
+    console.log('fileName.', fileName);
     console.log('last.', link.download);
 };
 
