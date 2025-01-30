@@ -1,7 +1,7 @@
-import movixPic from "../assets/SharedScreenshot_movies.jpg";
-import imagifyPic from "../assets/SharedScreenshot_imagify.jpg";
-import smrPic from "../assets/SharedScreenshot_smr.jpg";
-import JobPortalPic from "../assets/SharedScreenshot_jobPortal.jpg";
+import movixPic from "../assets/SharedScreenshot_movies.png";
+import imagifyPic from "../assets/SharedScreenshot_imagify.png";
+import smrPic from "../assets/SharedScreenshot_smr.png";
+import JobPortalPic from "../assets/SharedScreenshot_jobPortal.png";
 
 export const projectData = [
   {
