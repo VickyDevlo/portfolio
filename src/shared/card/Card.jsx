@@ -6,7 +6,7 @@ const Card = ({ image, title, description, demoLink }) => {
     <div
       className="shadow-lg rounded-md overflow-hidden bg-slate-700
      hover:shadow-xl transition-shadow duration-300"
-    > 
+    >
       <div className="w-full">
         <img
           src={image}
@@ -23,11 +23,13 @@ const Card = ({ image, title, description, demoLink }) => {
       <div className="p-4">
         <h3
           className="text-lg md:text-3xl text-white text-center font-semibold  
-        mb-5 truncate "
+        mb-5 truncate"
         >
           {title}
         </h3>
-        <p className="text-slate-300 text-xl md:text-2xl mb-5 text-center line-clamp-3">{description}</p>
+        <p className="text-slate-300 text-xl md:text-2xl mb-5 text-center line-clamp-3">
+          {description}
+        </p>
         <div className="flex justify-center">
           <Link
             to={demoLink}
