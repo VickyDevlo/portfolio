@@ -11,11 +11,11 @@ export const socialLinks = [
     icon: IoMdMail,
     path: "mailto:pranavmagare3011@gmail.com",
   },
-  {
-    handler: "gitHub",
-    icon: FaGithub,
-    path: "https://github.com/VickyDevlo",
-  },
+  // {
+  //   handler: "gitHub",
+  //   icon: FaGithub,
+  //   path: "https://github.com/VickyDevlo",
+  // },
   {
     handler: "instagram",
     icon: FaInstagram,

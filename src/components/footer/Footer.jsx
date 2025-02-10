@@ -7,12 +7,12 @@ const Footer = () => {
 
   return (
     <div className="top-shadow">
-      <div className="container mx-auto w-full flex flex-col md:flex-row justify-around items-center py-5">
-        <p className="hidden md:block md:text-lg font-semibold tracking-widest underline">
+      <div className="container mx-auto w-full flex max-md:flex-col-reverse flex-col md:flex-row justify-around items-center py-2">
+        <p className="hidden md:block tracking-widest underline">
           Developed by Pranav Magare
         </p>
-        <div className="flex items-center text-sm md:text-lg font-semibold tracking-[3px]">
-          <CgCopyright />
+        <div className="flex max-md:mt-3 items-center text-sm md:text-lg font-semibold tracking-[3px]">
+          <CgCopyright /> &nbsp;
           {currentYear} All rights reserved.
         </div>
         <SocialLinks bgColor={"bg-[#3a1d67]"} textColor={"text-white"} />

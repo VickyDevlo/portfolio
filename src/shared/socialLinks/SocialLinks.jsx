@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const SocialLinks = ({ bgColor, textColor }) => {
   return (
-    <div className="flex gap-5 md:gap-5 mt-3 md:mt-0">
+    <div className="flex gap-5">
       {socialLinks.map((links, i) => (
         <Link
           to={links.path}

@@ -29,7 +29,7 @@ const Header = () => {
         className={`w-full md:h-16 h-10 flex justify-center items-center px-4`}
       >
         <Logo />
-        <div className="container flex items-center md:justify-center px-4 py-2">
+        <div className="container flex items-center md:justify-center px-4">
           <nav>
             <ul
               className={`md:flex md:items-center gap-12  ${
