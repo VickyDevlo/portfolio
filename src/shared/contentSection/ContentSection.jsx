@@ -5,7 +5,7 @@ export const ContentSection = ({
 }) => {
   return (
     <div
-      className={`border-l-4  rounded-l-md ${
+      className={`border-l-4 ${
         isWorkExperience ? "border-blue-500" : "border-gray-500"
       } pl-6 py-4 mb-6`}
     >

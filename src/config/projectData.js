@@ -37,13 +37,13 @@ export const projectData = [
     image: movixPic,
     demoLink: "https://movies-five-wheat.vercel.app",
   },
-  {
-    id: 5,
-    title: "SMR Enterprise Quality Glass Solutions",
-    description: "Premium glass doors and windows designed for modern living.",
-    image: smrPic,
-    demoLink: "https://smr-enterprise.vercel.app",
-  },
+  // {
+  //   id: 5,
+  //   title: "SMR Enterprise Quality Glass Solutions",
+  //   description: "Premium glass doors and windows designed for modern living.",
+  //   image: smrPic,
+  //   demoLink: "https://smr-enterprise.vercel.app",
+  // },
 ];
 
 export default projectData;
