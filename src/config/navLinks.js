@@ -1,18 +1,18 @@
-export const navlinks = [
+export const navLinks = [
   {
-    navlink: "Home",
+    navLink: "Home",
     path: "/",
   },
   {
-    navlink: "About",
+    navLink: "About",
     path: "/about",
   },
   {
-    navlink: "Projects",
+    navLink: "Projects",
     path: "/projects",
   },
   {
-    navlink: "Resume",
+    navLink: "Resume",
     path: "/resume",
   },
 ];

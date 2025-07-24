@@ -14,7 +14,7 @@ function ThemeToggle() {
       {isDarkMode ? (
         <IoSunny className="text-yellow-300" />
       ) : (
-        <FaMoon className="text-gray-600" />
+        <FaMoon className="text-gray-800" />
       )}
     </button>
   );

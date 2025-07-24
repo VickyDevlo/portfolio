@@ -11,8 +11,8 @@ const Projects = () => {
           Completed Projects
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-6 ">
-          {projectData.map((project) => (
-            <Card key={project.id} {...project} />
+          {projectData.map((project, i) => (
+            <Card key={i} {...project} />
           ))}
         </div>
       </section>

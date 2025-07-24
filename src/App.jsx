@@ -13,7 +13,7 @@ function App() {
     <div
       className={`${
         isDarkMode ? "bg-darkBg text-darkText" : "bg-lightBg text-lightText"
-      } transition-colors duration-500 `}
+      } transition-all duration-500`}
     >
       <Header />
       <main>
