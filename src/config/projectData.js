@@ -19,7 +19,8 @@ export const projectData = [
     description:
       "Premium uPVC doors & windows for homes & businesses. Durable, energy-efficient & stylish solutions. Contact us today!",
     image: SMRPic,
-    demoLink: "https://smrenterprise.com",
+    demoLink: "https://smr-enterprise.vercel.app",
+    // demoLink: "https://smrenterprise.com",
   },
   {
     title: "Schedule Interview",
