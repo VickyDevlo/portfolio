@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const Card = ({ image, title, demoLink }) => {
   return (
     <div className="group relative w-full max-w-lg mx-auto shadow-lg rounded-xl overflow-hidden">
-      {/* Image */}
       <div className="w-full h-72 flex items-center justify-center bg-gray-100 relative">
         <img
           src={image}
@@ -12,7 +11,6 @@ const Card = ({ image, title, demoLink }) => {
           loading="lazy"
         />
 
-        {/* Mobile button - always visible at bottom */}
         <div className="absolute bottom-2 left-0 w-full flex justify-center sm:hidden">
           <Link
             to={demoLink}
@@ -25,10 +23,7 @@ const Card = ({ image, title, demoLink }) => {
         </div>
       </div>
 
-      {/* Desktop button - only on hover */}
-      <div
-        className="hidden sm:flex justify-center p-4 sm:absolute sm:inset-0 sm:items-center sm:justify-center sm:bg-black sm:bg-opacity-50 sm:opacity-0 sm:group-hover:opacity-100 sm:p-0 transition-all duration-300"
-      >
+      <div className="hidden sm:flex justify-center p-4 sm:absolute sm:inset-0 sm:items-center sm:justify-center sm:bg-black sm:bg-opacity-50 sm:opacity-0 sm:group-hover:opacity-100 sm:p-0 transition-all duration-300">
         <Link
           to={demoLink}
           target="_blank"
