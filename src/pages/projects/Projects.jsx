@@ -1,4 +1,3 @@
-import React from "react";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
 import Card from "../../shared/card/Card";
 import { projectData } from "../../config/projectData";
