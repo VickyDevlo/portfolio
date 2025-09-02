@@ -2,7 +2,6 @@ import movixPic from "../assets/SharedScreenshot_movies.png";
 import imagifyPic from "../assets/SharedScreenshot_imagify.png";
 import InterviewSchedulePic from "../assets/SharedScreenshot_interview-scheduler.jpg";
 import SMRPic from "../assets/SharedScreenshot_smr.jpg";
-import JobPortalPic from "../assets/SharedScreenshot_jobPortal.png";
 import OtpVerification from "../assets/SharedScreenshototpGenerator.jpg";
 import CarRentalApp from "../assets/SharedScreenshot_carRental.jpg";
 
