@@ -1,4 +1,3 @@
-import React from "react";
 import pranav_resume from "../../assets/pranav_resume.pdf";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
 import { FaFileDownload } from "react-icons/fa";
