@@ -4,8 +4,14 @@ import InterviewSchedulePic from "../assets/SharedScreenshot_interview-scheduler
 import SMRPic from "../assets/SharedScreenshot_smr.jpg";
 import OtpVerification from "../assets/SharedScreenshototpGenerator.jpg";
 import CarRentalApp from "../assets/SharedScreenshot_carRental.jpg";
+import ExpensesTracker from "../assets/expenses_tracker.png";
 
 export const projectData = [
+  {
+    title: "Expenses Tracker",
+    image: ExpensesTracker,
+    demoLink: "https://expenses-tracker-seven-rouge.vercel.app",
+  },
   {
     title: "Car Rental App",
     image: CarRentalApp,
@@ -22,21 +28,12 @@ export const projectData = [
     image: InterviewSchedulePic,
     demoLink: "https://interview-scheduler-indol.vercel.app/dashboard",
   },
-  // {
-  //   title: "Explore Top IT Jobs",
-  //   image: JobPortalPic,
-  //   demoLink: "https://job-portal-new-mauve.vercel.app",
-  // },
   {
     title: "OTP Verification",
     image: OtpVerification,
     demoLink: "https://otp-generator-sigma.vercel.app",
   },
-  {
-    title: "Imagify",
-    image: imagifyPic,
-    demoLink: "https://image-generator-blond.vercel.app",
-  },
+
   {
     title: "Movix: Movies & Tv Shows App",
     image: movixPic,
