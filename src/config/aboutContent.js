@@ -26,7 +26,7 @@ export const workExperienceData = [
     company: "Freelance",
     duration: "Jan 2024 - Present",
     description:
-      "Building responsive and dynamic web applications for clients using React.js, Tailwind CSS,and Redux Toolkit.",
+      "Building tailored MERN stack solutions for clients, leveraging React.js, Tailwind CSS, Bootstrap, Redux Toolkit, Node.js, Express.js, and MongoDB to create responsive and efficient web applications.",
   },
   {
     id: 2,
