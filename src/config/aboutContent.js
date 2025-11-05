@@ -19,9 +19,17 @@ export const aboutContent = [
   },
 ];
 
-export const workExprienceData = [
+export const workExperienceData = [
   {
     id: 1,
+    jobTitle: "React Developer",
+    company: "Freelance",
+    duration: "Jan 2024 - Present",
+    description:
+      "Building responsive and dynamic web applications for clients using React.js, Tailwind CSS,and Redux Toolkit.",
+  },
+  {
+    id: 2,
     jobTitle: "React Developer",
     company: "Galaxy Weblinks",
     duration: "May 2022 - Jun 2023",
@@ -29,7 +37,7 @@ export const workExprienceData = [
       "Developed and maintained web applications using React and Node.js.",
   },
   {
-    id: 2,
+    id: 3,
     jobTitle: "React Developer",
     company: "Safire SoftTech",
     duration: "Jan 2021 - Mar 2022",

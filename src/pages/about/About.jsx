@@ -1,8 +1,7 @@
-import React from "react";
 import SkillsExpertise from "../../components/skillsExpertise/SkillsExpertise";
 import { ContentSection } from "../../shared/contentSection/ContentSection";
 import { Wrapper } from "../../shared/wrapper/Wrapper";
-import { aboutContent, workExprienceData } from "../../config/aboutContent";
+import { aboutContent, workExperienceData } from "../../config/aboutContent";
 
 const About = () => {
   return (
@@ -29,7 +28,7 @@ const About = () => {
 
           <ContentSection
             title="Work Experience"
-            content={workExprienceData.map(
+            content={workExperienceData.map(
               (job) =>
                 `${job.jobTitle} at ${job.company} - ${job.duration} : ${job.description}`
             )}

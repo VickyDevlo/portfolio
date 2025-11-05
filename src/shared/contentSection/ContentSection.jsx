@@ -18,7 +18,7 @@ export const ContentSection = ({
       {content.map((text, index) => (
         <p
           key={index}
-          className="text-xl md:text-2xl mt-2"
+          className="text-xl md:text-2xl mt-5"
           style={{ textIndent: "50px" }}
         >
           {text}
