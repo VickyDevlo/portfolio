@@ -1,15 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Lobster", sans-serif;
-}
-.top-shadow {
-  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
+html {
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  background-color: #0f1420;
+}
+
+.font-display {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.font-mono {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 1px;
+  width: 0;
+  background: currentColor;
+  transition: width 0.2s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.chip {
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+.chip:hover {
+  transform: translateY(-2px);
+}
+
+.card {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.icon-btn {
+  transition:
+    transform 0.15s ease,
+    border-color 0.15s ease;
+}
+.icon-btn:hover {
+  transform: translateY(-2px);
+  border-color: #2e6ff2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chip,
+  .card,
+  .icon-btn,
+  .nav-link::after {
+    transition: none !important;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #2e6ff2;
+  outline-offset: 2px;
+}
 ::-webkit-scrollbar {
   display: none;
 }
