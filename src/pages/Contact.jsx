@@ -62,7 +62,7 @@ export const Contact = () => {
             </div>
             <a
               href={`tel:${CONTACT.phoneHref}`}
-              className="text-sm block text-mist"
+              className="text-sm block text-mist w-fit"
             >
               {CONTACT.phone}
             </a>
