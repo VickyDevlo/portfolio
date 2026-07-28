@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { NAV_ITEMS, CONTACT } from "../data/content"
+import { NAV_ITEMS, CONTACT } from "../data/content";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -22,16 +22,14 @@ export default function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-panel/50 backdrop-blur-md"
-          : "bg-transparent"
+        scrolled ? "bg-panel/50 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3 sm:py-6 relative">
-        {" "}
+      <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3 sm:py-6 relative">
         <NavLink
           to="/"
-          className="flex items-center justify-center h-10 w-10 rounded-full bg-ember text-ink font-bold"
+          className="flex items-center justify-center h-10 w-10 rounded-full
+           bg-ember text-ink font-bold"
         >
           PM
         </NavLink>
