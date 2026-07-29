@@ -1,13 +1,5 @@
 import { useState } from "react";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  Phone,
-  Check,
-  Copy,
-  FileDown,
-} from "lucide-react";
+import { Linkedin, Mail, Phone, Check, Copy, FileDown } from "lucide-react";
 import { usePageTitle } from "../hooks/usePageTitle";
 import { Reveal } from "../shared/Reveal";
 import { SectionHeading } from "../shared/SectionHeading";
@@ -77,15 +69,6 @@ export const Contact = () => {
             >
               <Linkedin size={18} className="text-paper" />
             </a>
-            {/* <a
-              href={CONTACT.github}
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub"
-              className="icon-btn p-3 rounded-full border border-mistdim"
-            >
-              <Github size={18} className="text-paper" />
-            </a> */}
             <a
               href={`mailto:${CONTACT.email}`}
               aria-label="Email"
@@ -112,4 +95,4 @@ export const Contact = () => {
       </section>
     </Reveal>
   );
-}
+};

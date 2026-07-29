@@ -3,12 +3,9 @@ import { NavLink } from "react-router-dom";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { NAV_ITEMS, CONTACT } from "../data/content";
 
-export default function Navbar() {
+export const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  const linkClass = ({ isActive }) =>
-    `nav-link ${isActive ? "active text-blue" : "text-mist"}`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,10 +19,10 @@ export default function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-panel/80 backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-panel/10 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3 sm:py-6 relative">
+      <nav className="max-w-8xl mx-auto px-4 py-3 sm:py-6 sm:px-6 lg:px-8 flex items-center justify-between relative">
         <NavLink
           to="/"
           className="flex items-center justify-center h-10 w-10 rounded-full
@@ -39,7 +36,9 @@ export default function Navbar() {
               key={item.path}
               to={item.path}
               end={item.path === "/"}
-              className={linkClass}
+              className={({ isActive }) =>
+                `nav-link ${isActive ? "active text-blue" : "text-mist"}`
+              }
             >
               {item.label}
             </NavLink>
@@ -89,4 +88,4 @@ export default function Navbar() {
       </nav>
     </header>
   );
-}
+};
