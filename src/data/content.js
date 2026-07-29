@@ -52,16 +52,19 @@ export const SKILL_GROUPS = [
     label: "React ecosystem",
     color: "ember",
     items: [
-      "React",
+      "React.js",
       "JavaScript (ES6+)",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
-      "Context API",
+      "React Router",
       "Redux Toolkit",
+      "Context API",
       "Axios",
-      "API Integration",
+      "REST API Integration",
       "Responsive Web Design",
+      "Component-Based Architecture",
+      "State Management",
       "Performance Optimization",
     ],
   },
@@ -71,21 +74,41 @@ export const SKILL_GROUPS = [
     items: [
       "SAP UI5 / Fiori Development",
       "SAP Fiori Elements",
-      "OData Services",
+      "SAP BTP",
+      "OData V2 Services",
       "MVC Architecture",
-      "JSONModel & Fragments",
+      "Data Binding",
+      "JSONModel",
+      "XML Views",
+      "Fragments",
+      "Routing & Navigation",
+      "Formatter Functions",
+    ],
+  },
+  {
+    label: "AI Tools",
+    color: "green",
+    items: [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Claude",
+      "Google Gemini",
+      "Cursor AI",
+      "Antigravity",
     ],
   },
   {
     label: "Tools & workflow",
     color: "mist",
     items: [
+      "VS Code",
+      "Vite",
+      "SAP Business Application Studio",
       "Git",
       "GitHub",
-      "VS Code",
-      "SAP Business Application Studio",
+      "Postman",
       "Jira",
-      "Google Workspace",
+      "npm",
     ],
   },
 ];
@@ -95,7 +118,7 @@ export const PROJECTS = [
     slug: "sales-purchase-order-system",
     name: "Sales & Purchase Order Management System",
     side: "sap",
-    tag: "SAP UI5 · Fiori",
+    tag: "SAP UI5 • Fiori",
     desc: "Responsive Sales and Purchase Order system built on SAP UI5 following Fiori design principles — MVC architecture, JSONModel, routing, fragments, formatters, filtering, sorting, and Excel export.",
     stack: [
       "SAP UI5",
@@ -113,8 +136,8 @@ export const PROJECTS = [
     ],
   },
   {
-    slug: "skoodio",
-    name: "Skoodio — Reaction Video Platform",
+    slug: "skoodio-reaction-video-platform",
+    name: "Skoodio - Reaction Video Platform",
     side: "react",
     tag: "React js",
     desc: "User-friendly platform UI for recording and viewing reaction videos, including navigation components, recording controls, and drawing and screen-sharing features.",
@@ -224,6 +247,31 @@ export const EXPERIENCE = [
 
 export const EDUCATION = {
   degree: "Bachelor of Computer Applications",
-  school: "C. D. Jain College of Commerce, Pune University",
+  college: "C. D. Jain College of Commerce",
+  university: "Pune University",
   period: "Jun '19",
 };
+
+export const REACT_CODE = `import React from "react";
+
+export const Button = ({ label, onPress }) => {
+
+  return (
+    <button
+      onClick={onPress}
+    >
+      {label}
+    </button>
+  );
+}`;
+
+export const UI5_CODE = `<mvc:View
+  controllerName="app.controller.Button"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Button
+    text="Submit"
+    type="Emphasized"
+    press="onSubmitPress"
+  />
+</mvc:View>`;

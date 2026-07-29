@@ -32,7 +32,7 @@ export const ProjectCard = ({ project }) => {
         {project.stack.map((t, i) => (
           <span key={t} className="font-mono text-[11px] text-mistdim">
             {t}
-            {i !== project.stack.length - 1 ? " ·" : ""}
+            {i !== project.stack.length - 1 ? " •" : ""}
           </span>
         ))}
       </div>

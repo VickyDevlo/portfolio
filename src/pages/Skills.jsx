@@ -15,7 +15,11 @@ export const Skills = () => {
             <div key={g.label}>
               <p
                 className={`font-mono text-xs uppercase tracking-widest mb-4 ${
-                  g.color === "ember" ? "text-ember" : g.color === "blue" ? "text-blue" : "text-mist"
+                  g.color === "ember"
+                    ? "text-ember"
+                    : g.color === "blue"
+                      ? "text-blue"
+                      : "text-mist"
                 }`}
               >
                 {g.label}
@@ -33,4 +37,4 @@ export const Skills = () => {
       </section>
     </Reveal>
   );
-}
+};

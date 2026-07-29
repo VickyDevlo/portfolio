@@ -2,10 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, FileDown, User, Layers, Briefcase } from "lucide-react";
 import { usePageTitle } from "../hooks/usePageTitle";
 import { CONTACT, EXPLORE_LINKS, HIGHLIGHTS, PROJECTS } from "../data/content";
-import { CompareSlider } from "../shared/CompareSlider";
+import { FrameworkComparison } from "../shared/FrameworkComparison";
 import { Reveal } from "../shared/Reveal";
 import { ProjectCard } from "../shared/ProjectCard";
-
 
 export const Home = () => {
   usePageTitle("React & SAP UI5 Developer");
@@ -54,7 +53,7 @@ export const Home = () => {
           </a>
         </div>
 
-        <CompareSlider />
+        <FrameworkComparison />
       </section>
 
       {/* HIGHLIGHTS STRIP */}

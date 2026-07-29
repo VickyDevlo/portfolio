@@ -33,7 +33,7 @@ export const About = () => {
             {EDUCATION.degree}
           </h3>
           <p className="text-sm text-mist">
-            {EDUCATION.school} — {EDUCATION.period}
+            {EDUCATION.college}, {EDUCATION.university} — {EDUCATION.period}
           </p>
         </div>
       </section>

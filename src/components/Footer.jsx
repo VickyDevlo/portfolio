@@ -7,7 +7,7 @@ export const Footer = () => {
      border-mist/15"
     >
       <span className="font-mono text-xs text-mistdim">© {currentYear}</span>
-      <span className="font-mono text-xs text-mistdim">
+      <span className="font-mono text-xs text-ember">
         Developed by Pranav
       </span>
     </footer>

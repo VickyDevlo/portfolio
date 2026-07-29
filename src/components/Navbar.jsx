@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { NAV_ITEMS, CONTACT } from "../data/content";
 
 export default function Navbar() {
@@ -22,7 +22,7 @@ export default function Navbar() {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-panel/50 backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-panel/80 backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <nav className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-3 sm:py-6 relative">
@@ -47,9 +47,10 @@ export default function Navbar() {
         </div>
         <a
           href={`mailto:${CONTACT.email}`}
-          className="hidden sm:inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-mistdim text-paper"
+          className="hidden sm:inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-blue text-paper"
         >
-          Say hello 👋
+          <span className="hidden md:inline">Get in touch</span>
+          <ArrowUpRight className="w-3.5 h-3.5" aria-hidden="true" />
         </a>
         <button
           className="sm:hidden p-2 rounded-lg border border-mistdim"

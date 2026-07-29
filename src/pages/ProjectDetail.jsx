@@ -1,8 +1,8 @@
-import { useEffect } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { PROJECTS } from "../data/content";
 import { Reveal } from "../shared/Reveal";
+import { usePageTitle } from "../hooks/usePageTitle";
 
 const ACCENT_TEXT = { react: "text-ember", sap: "text-blue" };
 const ACCENT_BG = { react: "bg-ember/10", sap: "bg-blue/10" };
@@ -11,10 +11,7 @@ const ACCENT_BORDER = { react: "border-emberdim", sap: "border-bluedim" };
 export const ProjectDetail = () => {
   const { slug } = useParams();
   const project = PROJECTS.find((p) => p.slug === slug);
-
-  useEffect(() => {
-    if (project) document.title = `${project.name} — Pranav Magare`;
-  }, [project]);
+  usePageTitle(project?.name);
 
   if (!project) return <Navigate to="/work" replace />;
 
@@ -31,12 +28,6 @@ export const ProjectDetail = () => {
         >
           <ArrowLeft size={14} /> All work
         </Link>
-
-        {/* <span
-          className={`font-mono text-[11px] uppercase tracking-widest px-2 py-1 rounded inline-block mb-4 ${textClass} ${bgClass}`}
-        >
-          {project.tag}
-        </span> */}
 
         <h1 className="font-display text-2xl sm:text-3xl font-semibold mb-4">
           {project.name}
@@ -70,4 +61,4 @@ export const ProjectDetail = () => {
       </section>
     </Reveal>
   );
-}
+};
