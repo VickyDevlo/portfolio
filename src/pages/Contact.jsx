@@ -14,8 +14,9 @@ export const Contact = () => {
       await navigator.clipboard.writeText(CONTACT.email);
       setCopied(true);
       setTimeout(() => setCopied(false), 3000);
-    } catch (e) {
+    } catch (error) {
       setCopied(false);
+      console.error(error);
     }
   };
 

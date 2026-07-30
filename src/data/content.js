@@ -41,12 +41,6 @@ export const EXPLORE_LINKS = [
   },
 ];
 
-export const HIGHLIGHTS = [
-  { value: "3+", label: "Years of frontend experience" },
-  { value: "6", label: "Shipped projects" },
-  { value: "2", label: "Frontend worlds — React & SAP UI5" },
-];
-
 export const SKILL_GROUPS = [
   {
     label: "React ecosystem",
@@ -141,7 +135,14 @@ export const PROJECTS = [
     side: "react",
     tag: "React js",
     desc: "User-friendly platform UI for recording and viewing reaction videos, including navigation components, recording controls, and drawing and screen-sharing features.",
-    stack: ["React", "JavaScript", "Screen Sharing API", "Canvas"],
+    stack: [
+      "React",
+      "Redux Toolkit",
+      "JavaScript",
+      "Screen Sharing API",
+      "Canvas",
+      "CSS",
+    ],
     highlights: [
       "Designed a user-friendly layout for recording and viewing reaction videos.",
       "Built the navigation components tying the recording and viewing flows together.",
@@ -155,7 +156,7 @@ export const PROJECTS = [
     side: "react",
     tag: "React js",
     desc: "Appointment booking and employee management system with a UI built directly from client requirements, designed for a smooth day-to-day customer experience.",
-    stack: ["React", "JavaScript", "CSS3"],
+    stack: ["React", "Redux Toolkit", "JavaScript", "CSS"],
     highlights: [
       "Built appointment booking pages so customers and staff could manage schedules easily.",
       "Created employee record management for tracking staff and shifts.",
@@ -168,7 +169,7 @@ export const PROJECTS = [
     side: "react",
     tag: "React js",
     desc: "Movie and TV show details app for browsing and searching titles, with cast, release dates, and other details pulled through a movie database API.",
-    stack: ["React", "JavaScript", "REST API", "CSS3"],
+    stack: ["React", "Redux Toolkit", "JavaScript", "REST API", "Tailwind CSS"],
     highlights: [
       "Built a search experience for finding movies and TV shows quickly.",
       "Displayed full details per title — cast, release date, and other metadata.",
@@ -182,7 +183,13 @@ export const PROJECTS = [
     side: "react",
     tag: "React js",
     desc: "Business showcase site for a UPVC door and window company, built to present the product range, gallery, and features to prospective customers.",
-    stack: ["React", "JavaScript", "CSS3", "Responsive Web Design"],
+    stack: [
+      "React",
+      "Context API",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Web Design",
+    ],
     highlights: [
       "Built a product showcase for the company's UPVC doors and windows.",
       "Added a gallery section to display finished installations and product photos.",
@@ -196,7 +203,13 @@ export const PROJECTS = [
     side: "react",
     tag: "React js",
     desc: "Car booking app where users pick a rental date and choose from a range of available cars before confirming a booking.",
-    stack: ["React", "JavaScript", "Date Picker", "CSS3"],
+    stack: [
+      "React",
+      "Redux Toolkit",
+      "JavaScript",
+      "Date Picker",
+      "Tailwind CSS",
+    ],
     highlights: [
       "Built a date-selection flow so users can pick their rental period.",
       "Displayed a range of cars for users to browse and select from.",
@@ -204,6 +217,26 @@ export const PROJECTS = [
       "Designed the UI to make comparing different cars straightforward.",
     ],
   },
+  {
+    slug: "greencart-grocery-ecommerce",
+    name: "GreenCart — Vegetables & Grocery E-Commerce App",
+    side: "react",
+    tag: "React js",
+    desc: "Full-featured grocery and vegetable e-commerce platform with product browsing, cart management, and checkout, built with React, Redux for state management, and Tailwind CSS for a clean, responsive UI.",
+    stack: ["React", "Redux Toolkit", "Tailwind CSS", "JavaScript", "REST API"],
+    highlights: [
+      "Built a product catalog for browsing vegetables and groceries with category-based filtering.",
+      "Implemented cart management using Redux for predictable, centralized state across the app.",
+      "Designed a responsive UI with Tailwind CSS for a fast, clean shopping experience on any device.",
+      "Added a checkout flow tying product selection, cart, and order confirmation together.",
+      "Structured reusable components to keep the storefront scalable as the product catalog grows.",
+    ],
+  },
+];
+export const HIGHLIGHTS = [
+  { value: "3+", label: "Years of frontend experience" },
+  { value: PROJECTS?.length, label: "Projects Built" },
+  { value: "2", label: "Frontend worlds — React & SAP UI5" },
 ];
 
 export const EXPERIENCE = [
@@ -237,7 +270,7 @@ export const EXPERIENCE = [
     location: "Pune, India",
     period: "Jan '21 — Mar '22",
     bullets: [
-      "Built interactive user interfaces using React, JavaScript, HTML5, and CSS3 for multiple client projects.",
+      "Built interactive user interfaces using React, JavaScript, HTML5, and CSS for multiple client projects.",
       "Converted UI/UX designs into responsive, pixel-perfect web pages with a focus on usability and accessibility.",
       "Identified and resolved frontend bugs, improving application stability and overall user experience.",
       "Collaborated with team members using Git and followed industry best practices for clean, maintainable code.",
