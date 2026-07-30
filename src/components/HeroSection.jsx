@@ -22,7 +22,7 @@ export const HeroSection = () => {
           <p className="max-w-xl mb-8 text-mist">
             3+ years building responsive React applications, now extending that
             into SAP UI5 and Fiori for enterprise-grade delivery. Drag the
-            divider below to see both sides of how I build.
+            divider below to see both sides of how i build.
           </p>
 
           <div className="flex flex-wrap gap-3 mb-10">
