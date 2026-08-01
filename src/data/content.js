@@ -285,6 +285,24 @@ export const EDUCATION = {
   period: "Jun '19",
 };
 
+export const CONTACT_STEPS = [
+  {
+    n: "01",
+    title: "You send a message",
+    desc: "Fill out the form with a bit of context about what you're building.",
+  },
+  {
+    n: "02",
+    title: "I read it, properly",
+    desc: "No auto-replies. I go through every message myself, usually the same day.",
+  },
+  {
+    n: "03",
+    title: "We find time to talk",
+    desc: "If it's a fit, I'll reply with a couple of times that work for a quick call.",
+  },
+];
+
 export const REACT_CODE = `import React from "react";
 
 export const Button = ({ label, onPress }) => {

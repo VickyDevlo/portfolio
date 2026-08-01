@@ -37,7 +37,7 @@ export const HeroSection = () => {
               className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest px-5 py-3 rounded-full border border-mistdim
             text-paper"
             >
-              Get in touch
+             Let's Talk
             </Link>
             <a
               href="/pranav_resume.pdf"

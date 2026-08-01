@@ -8,7 +8,7 @@ export const Work = () => {
   usePageTitle("Work");
   return (
     <Reveal>
-      <section className="py-14">
+      <section className="py-10">
         <SectionHeading n="02">Selected work</SectionHeading>
         <p className="text-sm text-mist mb-6">
           Click a project for the full breakdown.

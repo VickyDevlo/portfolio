@@ -8,7 +8,7 @@ export const Skills = () => {
   usePageTitle("Skills");
   return (
     <Reveal>
-      <section className="py-14">
+      <section className="py-10">
         <SectionHeading n="03">Skills</SectionHeading>
         <div className="grid md:grid-cols-3 gap-8">
           {SKILL_GROUPS.map((g) => (

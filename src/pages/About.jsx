@@ -7,7 +7,7 @@ export const About = () => {
   usePageTitle("About");
   return (
     <Reveal>
-      <section className="py-14">
+      <section className="py-10">
         <SectionHeading n="01">About</SectionHeading>
         <div className="grid md:grid-cols-2 gap-10 mb-12">
           <p className="leading-relaxed text-mist">

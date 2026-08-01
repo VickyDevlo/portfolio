@@ -8,7 +8,7 @@ export const Experience = () => {
   usePageTitle("Experience");
   return (
     <Reveal>
-      <section className="py-14">
+      <section className="py-10">
         <SectionHeading n="04">Experience</SectionHeading>
         <div className="flex flex-col">
           {EXPERIENCE.map((e, i) => (
