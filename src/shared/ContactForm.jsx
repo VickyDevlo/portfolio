@@ -44,7 +44,6 @@ export const ContactForm = () => {
       });
   };
 
-
   const inputClasses =
     "bg-transparent border border-mistdim/40 focus:border-ember rounded-lg px-4 py-3 text-paper placeholder-mist/50 font-body text-[15px] outline-none transition-colors duration-200 w-full";
 
@@ -59,7 +58,7 @@ export const ContactForm = () => {
             <input
               type="text"
               name="name"
-              placeholder="Your name"
+              placeholder="John Doe"
               value={formData.name}
               onChange={handleChange}
               required
@@ -86,7 +85,7 @@ export const ContactForm = () => {
           <input
             type="email"
             name="email"
-            placeholder="you@example.com"
+            placeholder="john@example.com"
             value={formData.email}
             onChange={handleChange}
             required
@@ -98,7 +97,7 @@ export const ContactForm = () => {
           <label className={labelClasses}>Message</label>
           <textarea
             name="message"
-            placeholder="Write Something ..."
+            placeholder="Share your thoughts..."
             rows="5"
             value={formData.message}
             onChange={handleChange}
