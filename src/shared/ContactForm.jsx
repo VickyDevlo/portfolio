@@ -54,10 +54,14 @@ export const ContactForm = () => {
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
         <div className="flex flex-col sm:flex-row gap-5">
           <div className="flex-1 flex flex-col gap-2">
-            <label className={labelClasses}>Name</label>
+            <label htmlFor="name" className={labelClasses}>
+              Name
+            </label>
             <input
               type="text"
               name="name"
+              id="name"
+              autoComplete="off"
               placeholder="John Doe"
               value={formData.name}
               onChange={handleChange}
@@ -66,10 +70,14 @@ export const ContactForm = () => {
             />
           </div>
           <div className="flex-1 flex flex-col gap-2">
-            <label className={labelClasses}>Mobile number</label>
+            <label htmlFor="mobile" className={labelClasses}>
+              Mobile number
+            </label>
             <input
               type="tel"
               name="mobile"
+              id="mobile"
+              autoComplete="off"
               placeholder="98 7654 3210"
               value={formData.mobile}
               onChange={handleChange}
@@ -81,10 +89,14 @@ export const ContactForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label className={labelClasses}>Email id</label>
+          <label htmlFor="email" className={labelClasses}>
+            Email id
+          </label>
           <input
             type="email"
             name="email"
+            id="email"
+            autoComplete="off"
             placeholder="john@example.com"
             value={formData.email}
             onChange={handleChange}
@@ -94,11 +106,13 @@ export const ContactForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label className={labelClasses}>Message</label>
+          <label htmlFor="message" className={labelClasses}>Message</label>
           <textarea
             name="message"
+            id="message"
             placeholder="Share your thoughts..."
             rows="5"
+            autoComplete="off"
             value={formData.message}
             onChange={handleChange}
             required
