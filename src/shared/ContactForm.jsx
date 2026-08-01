@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "../hooks/useToast";
 
@@ -43,6 +43,7 @@ export const ContactForm = () => {
         toast.error("Something went wrong. Please try again.");
       });
   };
+
 
   const inputClasses =
     "bg-transparent border border-mistdim/40 focus:border-ember rounded-lg px-4 py-3 text-paper placeholder-mist/50 font-body text-[15px] outline-none transition-colors duration-200 w-full";
