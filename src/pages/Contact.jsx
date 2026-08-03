@@ -13,18 +13,15 @@ export const Contact = () => {
         <SectionHeading n="05">Contact</SectionHeading>
 
         <h2
-          className="font-display font-semibold mb-10"
+          className="font-display font-semibold mb-10 max-w-xl"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2.25rem)" }}
         >
-          Building something that needs
-          <br />
-          both worlds? <span className="text-ember">Let's talk.</span>
+          Building something that needs both worlds?{" "}
+          <span className="text-ember">Let's talk.</span>
         </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-16">
-          {/* Left side */}
+        <div className="grid grid-cols-1 min-[900px]:grid-cols-[1fr_420px] gap-10">
           <ContactForm />
-          {/* Right side */}
           <ContactSteps />
         </div>
       </section>

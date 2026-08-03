@@ -3,7 +3,7 @@ import { CONTACT_STEPS } from "../data/content";
 
 export const ContactSteps = () => {
   return (
-    <div className="lg:border-l lg:border-mistdim/30 lg:pl-10">
+    <div className="lg:border-l lg:border-mistdim/20 lg:pl-10">
       <p className="font-mono text-xs uppercase tracking-widest text-mist mb-8">
         What happens next
       </p>

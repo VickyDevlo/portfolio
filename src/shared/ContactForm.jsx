@@ -50,7 +50,7 @@ export const ContactForm = () => {
   const labelClasses = "font-mono text-xs uppercase tracking-widest text-mist";
 
   return (
-    <div className="max-w-xl">
+    <div className="min-w-full">
       <form onSubmit={handleSubmit} className="flex flex-col gap-5">
         <div className="flex flex-col sm:flex-row gap-5">
           <div className="flex-1 flex flex-col gap-2">
