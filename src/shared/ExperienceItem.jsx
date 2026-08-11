@@ -18,11 +18,11 @@ export const ExperienceItem = ({ item, first = false }) => {
           {item.role}
         </h3>
         <p className="text-sm mb-3 text-blue">{item.org}</p>
-        <ul className="space-y-1.5">
-          {item.bullets.map((b, i) => (
+        <ul className="space-y-2">
+          {item.bullets.map((bullet, i) => (
             <li key={i} className="text-sm flex gap-2 text-mist">
-              <span className="text-mistdim">—</span>
-              <span>{b}</span>
+              <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-mistdim" />
+              <span>{bullet}</span>
             </li>
           ))}
         </ul>

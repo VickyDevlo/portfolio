@@ -1,5 +1,12 @@
 import { User, Layers, Briefcase } from "lucide-react";
 
+export const INITIAL_FORM_FIELDS = {
+  name: "",
+  mobile: "",
+  email: "",
+  message: "",
+};
+
 export const CONTACT = {
   name: "Pranav Magare",
   title: "React Developer • SAP UI5 Developer",
@@ -288,18 +295,18 @@ export const EDUCATION = {
 export const CONTACT_STEPS = [
   {
     n: "01",
-    title: "You send a message",
-    desc: "Fill out the form with a bit of context about what you're building.",
+    title: "Send a Message",
+    desc: "Share a few details about your project, goals, and what you’re looking to build.",
   },
   {
     n: "02",
-    title: "I read it, properly",
-    desc: "No auto-replies. I go through every message myself, usually the same day.",
+    title: "I’ll Review It",
+    desc: "I personally review every message and will get back to you with a thoughtful response typically within the same day.",
   },
   {
     n: "03",
-    title: "We find time to talk",
-    desc: "If it's a fit, I'll reply with a couple of times that work for a quick call.",
+    title: "Let’s Connect",
+    desc: "If it looks like a good fit, we’ll find a convenient time for a quick call and discuss the next steps",
   },
 ];
 

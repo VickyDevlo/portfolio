@@ -5,7 +5,7 @@ export const ContactSteps = () => {
   return (
     <div className="lg:border-l lg:border-mistdim/20 lg:pl-10">
       <p className="font-mono text-xs uppercase tracking-widest text-mist mb-8">
-        What happens next
+        what happens next
       </p>
 
       <div className="flex flex-col">
