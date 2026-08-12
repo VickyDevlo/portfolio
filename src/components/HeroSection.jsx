@@ -24,24 +24,12 @@ export const HeroSection = () => {
   return (
     <Reveal>
       <section className="pt-10 pb-14">
-        <p className="font-mono text-xs uppercase tracking-widest mb-4 text-mistdim">
-          {CONTACT.title}
-        </p>
-        <h1
-          className="font-display font-semibold leading-tight mb-6"
-          style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)" }}
-        >
+        <h1 className="font-display font-semibold text-xl leading-[1.1] sm:text-4xl sm:leading-[1.15] lg:text-[3.5rem] lg:leading-[1.2]">
           I build interfaces that feel modern on the outside{" "}
           <span className="text-ember">and run enterprise-grade</span>{" "}
           underneath.
         </h1>
-        <p className="max-w-xl mb-8 text-mist">
-          3+ years building responsive React applications, now extending that
-          into SAP UI5 and Fiori for enterprise-grade delivery. Drag the divider
-          below to see both sides of how i build.
-        </p>
-
-        <div className="flex flex-wrap max-sm:gap-4 gap-3 mb-10">
+        <div className="flex flex-wrap max-sm:gap-4 gap-3 my-8">
           <Link
             to="/work"
             className="inline-flex items-center gap-2.5 rounded-lg bg-ember

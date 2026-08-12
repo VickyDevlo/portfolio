@@ -35,7 +35,7 @@ export const INITIAL_FORM_FIELDS = {
 
 export const CONTACT = {
   name: "Pranav Magare",
-  title: "React Developer • SAP UI5 Developer",
+  designations: ["React Developer", "SAP UI5 Developer"],
   email: "pranavmagare3011@gmail.com",
   phone: "+91 83789 01217",
   phoneHref: "+918378901217",
