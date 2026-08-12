@@ -3,6 +3,7 @@ import { usePageTitle } from "../hooks/usePageTitle";
 import { Chip } from "../shared/Chip";
 import { Reveal } from "../shared/Reveal";
 import { SectionHeading } from "../shared/SectionHeading";
+import { getColorClasses } from "../utils/colorUtils";
 
 export const Skills = () => {
   usePageTitle("Skills");
@@ -10,29 +11,59 @@ export const Skills = () => {
     <Reveal>
       <section className="py-10">
         <SectionHeading n="03">Skills</SectionHeading>
-        <div className="grid md:grid-cols-3 gap-8">
-          {SKILL_GROUPS.map((g) => (
-            <div key={g.label}>
-              <p
-                className={`font-mono text-xs uppercase tracking-widest mb-4 ${
-                  g.color === "ember"
-                    ? "text-ember"
-                    : g.color === "blue"
-                      ? "text-blue"
-                      : "text-mist"
-                }`}
+        <div className="mt-2">
+          {SKILL_GROUPS.map((group, index) => {
+            const colors = getColorClasses(group.color);
+            const isFirst = index === 0;
+            const isLast = index === SKILL_GROUPS.length - 1;
+
+            return (
+              <div
+                key={group.label}
+                className={`group grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8 md:gap-12 ${isFirst
+                    ? "pb-6 border-b border-white/10"
+                    : !isLast
+                      ? "py-6 border-b border-white/10"
+                      : "pt-6"
+                  }`}
               >
-                {g.label}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {g.items.map((s) => (
-                  <Chip key={s} color={g.color}>
-                    {s}
-                  </Chip>
-                ))}
+                {/* Category */}
+                <div>
+                  <div className="flex items-center gap-3">
+                    <span
+                      className={`font-mono text-[10px] tracking-[0.2em] ${colors.text}`}
+                    >
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+
+                    <span className={`h-1.5 w-1.5 rounded-full ${colors.bg}`} />
+
+                    <span
+                      className={`font-mono text-xs uppercase tracking-[0.16em] ${colors.text}`}
+                    >
+                      {group.label}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Skills */}
+                <div className="flex flex-wrap content-start gap-2">
+                  {group.items.map((skill) => {
+                    const Icon = skill.icon;
+
+                    return (
+                      <div key={skill.name}>
+                        <Chip color={group.color}>
+                          <Icon size={14} strokeWidth={1.8} />
+                          <span>{skill.name}</span>
+                        </Chip>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
     </Reveal>

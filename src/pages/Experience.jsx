@@ -12,7 +12,12 @@ export const Experience = () => {
         <SectionHeading n="04">Experience</SectionHeading>
         <div className="flex flex-col">
           {EXPERIENCE.map((e, i) => (
-            <ExperienceItem key={e.org} item={e} first={i === 0} />
+            <ExperienceItem
+              key={e.org}
+              item={e}
+              first={i === 0}
+              last={i === EXPERIENCE.length - 1}
+            />
           ))}
         </div>
       </section>

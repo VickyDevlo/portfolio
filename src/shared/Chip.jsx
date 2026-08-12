@@ -8,9 +8,9 @@ export const Chip = ({ children, color = "mist" }) => {
   const v = VARIANTS[color] || VARIANTS.mist;
   return (
     <span
-      className={`chip text-sm px-3 py-1.5 rounded-full border ${v.border} ${v.bg} ${v.text} inline-block`}
+      className={`flex items-center gap-1 text-sm px-3 py-1.5 rounded-full border ${v.border} ${v.bg} ${v.text}`}
     >
       {children}
     </span>
   );
-}
+};
