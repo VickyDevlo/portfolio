@@ -36,7 +36,7 @@ export const HeroSection = () => {
     <Reveal>
       <section className="pt-10 pb-14">
         <div className="mb-2 inline-block max-w-full rounded-full bg-gradient-to-r from-ember/40 via-mistdim to-ember/40 p-[1px]">
-          <ul className="flex w-fit max-w-full flex-wrap items-center justify-center gap-x-1.5 gap-y-1 rounded-full bg-panel px-3 py-1.5 font-mono text-[8px] uppercase tracking-wide text-mist sm:gap-x-2 sm:px-3.5 sm:py-2 sm:text-[10px]">
+          <ul className="flex w-fit max-w-full flex-wrap items-center justify-center gap-1 rounded-full bg-panel px-3 py-1.5 font-mono text-[8px] uppercase tracking-wide text-mist sm:gap-x-2 sm:px-3.5 sm:py-2 sm:text-[10px]">
             {CONTACT.designations.map((designation, index) => (
               <li
                 key={designation}
@@ -44,7 +44,7 @@ export const HeroSection = () => {
               >
                 {index > 0 && (
                   <span
-                    className="h-0.5 w-0.5 shrink-0 rounded-full bg-ember/50 sm:h-1 sm:w-1"
+                    className="h-1.5 w-1.5 shrink-0 rounded-full bg-ember/50"
                     aria-hidden="true"
                   />
                 )}
