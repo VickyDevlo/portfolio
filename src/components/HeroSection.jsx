@@ -35,27 +35,28 @@ export const HeroSection = () => {
   return (
     <Reveal>
       <section className="pt-10 pb-14">
-        <ul className="mb-2 flex w-fit max-w-full flex-wrap items-center gap-x-1.5 gap-y-0.5 rounded-full border border-mistdim bg-panel px-2.5 py-1.5 font-mono text-[9px] leading-4 uppercase tracking-wide text-mist sm:px-3 sm:py-1.5 sm:text-[10px]">
-          {CONTACT.designations.map((designation, index) => (
-            <li
-              key={designation}
-              className="flex items-center gap-2 whitespace-nowrap tracking-widest"
-            >
-              {index > 0 && (
-                <span
-                  className="h-1 w-1 shrink-0 rounded-full bg-mistdim"
-                  aria-hidden="true"
-                />
-              )}
-              {designation}
-            </li>
-          ))}
-        </ul>
+        <div className="mb-2 inline-block max-w-full rounded-full bg-gradient-to-r from-ember/40 via-mistdim to-ember/40 p-[1px]">
+          <ul className="flex w-fit max-w-full flex-wrap items-center justify-center gap-x-1.5 gap-y-1 rounded-full bg-panel px-3 py-1.5 font-mono text-[8px] uppercase tracking-wide text-mist sm:gap-x-2 sm:px-3.5 sm:py-2 sm:text-[10px]">
+            {CONTACT.designations.map((designation, index) => (
+              <li
+                key={designation}
+                className="flex items-center gap-1.5 whitespace-nowrap tracking-widest sm:gap-2"
+              >
+                {index > 0 && (
+                  <span
+                    className="h-0.5 w-0.5 shrink-0 rounded-full bg-ember/50 sm:h-1 sm:w-1"
+                    aria-hidden="true"
+                  />
+                )}
+                {designation}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        <h1 className="font-display font-semibold text-xl leading-[1.1] sm:text-4xl sm:leading-[1.15] lg:text-[3.5rem] lg:leading-[1.2]">
-          I build interfaces that feel modern on the outside{" "}
-          <span className="text-ember">and run enterprise-grade</span>{" "}
-          underneath.
+        <h1 className="font-display font-semibold text-3xl leading-[1.1] sm:text-4xl sm:leading-[1.15] lg:text-[3.5rem] lg:leading-[1.2]">
+          Modern on the surface.{" "}
+          <span className="text-ember">Enterprise-grade</span> underneath.
         </h1>
 
         <div className="flex flex-wrap gap-4 sm:gap-3 my-5 sm:my-8">
