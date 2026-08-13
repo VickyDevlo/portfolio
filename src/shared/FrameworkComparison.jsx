@@ -39,13 +39,13 @@ export const FrameworkComparison = () => {
         .tok-brace   { color: #d2a8ff; }
       `}</style>
 
-      <div className="text-center mb-6 sm:mb-8">
-        <div className="font-mono text-[10px] sm:text-xs uppercase tracking-widest text-white/40 mb-2 sm:mb-3">
+      <div className="text-center mb-3 sm:mb-6">
+        <div className="font-mono text-[9px] sm:text-xs uppercase tracking-widest text-paper/40 mb-2">
           A Practical Comparison
         </div>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight px-2">
+        <h2 className="text-xl sm:text-3xl md:text-4xl font-semibold text-paper tracking-tight">
           Same interface. Different foundations.
-        </h1>
+        </h2>
       </div>
 
       <div

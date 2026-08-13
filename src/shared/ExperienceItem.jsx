@@ -24,7 +24,7 @@ export const ExperienceItem = ({ item, first = false, last = false }) => {
           {item.role}
         </h3>
 
-        <p className="text-sm mb-3 text-blue">{item.org}</p>
+        <p className="text-xs mb-3 text-blue">{item.org}</p>
 
         <ul className="space-y-2">
           {item.bullets.map((bullet, i) => (

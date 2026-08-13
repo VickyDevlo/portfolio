@@ -29,15 +29,8 @@ export const Skills = () => {
               >
                 {/* Category */}
                 <div>
-                  <div className="flex items-center gap-3">
-                    <span
-                      className={`font-mono text-[10px] tracking-[0.2em] ${colors.text}`}
-                    >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-
-                    <span className={`h-1.5 w-1.5 rounded-full ${colors.bg}`} />
-
+                  <div className="flex items-center gap-1">
+                    <span className={`h-1 w-1 rounded-full ${colors.bg}`} />
                     <span
                       className={`font-mono text-xs uppercase tracking-[0.16em] ${colors.text}`}
                     >

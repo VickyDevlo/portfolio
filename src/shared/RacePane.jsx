@@ -24,7 +24,7 @@ export const RacePane = ({
   return (
     <div className="relative w-full h-full bg-[#0d0f14] flex flex-col rounded-xl overflow-hidden border border-white/10">
       <div className="flex items-center justify-between h-8 sm:h-9 bg-[#0a0b0e] border-b border-white/5 px-2.5 sm:px-3 shrink-0">
-        <div className="flex items-center gap-2 font-mono text-[10px] sm:text-[11px] text-white/70 truncate">
+        <div className="flex items-center gap-2 font-mono text-[10px] sm:text-[11px] text-paper/70 truncate">
           <Circle size={6} className="sm:w-[7px] sm:h-[7px] shrink-0" fill={dotColor} stroke="none" />
           <span className="truncate">{fileName}</span>
         </div>

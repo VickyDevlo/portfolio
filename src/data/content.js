@@ -277,7 +277,7 @@ export const HIGHLIGHTS = [
 
 export const EXPERIENCE = [
   {
-    role: "SAP UI5 | React Developer",
+    role: "React Developer | SAP UI5 Developer",
     org: "Freelance",
     location: "Remote",
     period: "Jan '24 — Present",
