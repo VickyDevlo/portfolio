@@ -19,7 +19,7 @@ export const Navbar = () => {
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-panel/10 backdrop-blur-md" : "bg-transparent"
+        scrolled ? "bg-panel/10 backdrop-blur-sm" : "bg-transparent"
       }`}
     >
       <nav className="max-w-8xl mx-auto px-4 py-3 sm:py-6 sm:px-6 lg:px-8 flex items-center justify-between relative">
