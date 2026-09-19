@@ -12,6 +12,8 @@ export const ProjectDetail = () => {
   const { slug } = useParams();
   const project = PROJECTS.find((p) => p.slug === slug);
 
+  const isLiveDemo = !project?.liveDemo == "";
+
   usePageTitle(project?.name);
 
   if (!project) return <Navigate to="/work" replace />;
@@ -47,7 +49,9 @@ export const ProjectDetail = () => {
             <h1 className="font-display text-2xl sm:text-3xl font-semibold mb-4">
               {project.name}
             </h1>
-            <p className="text-mist leading-relaxed mb-6">{project.desc}</p>
+            <p className={`text-mist leading-relaxed ${isLiveDemo && "mb-6"}`}>
+              {project.desc}
+            </p>
 
             {project?.liveDemo && (
               <a
