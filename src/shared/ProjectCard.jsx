@@ -11,9 +11,7 @@ export const ProjectCard = ({ project }) => {
       className={`group relative flex flex-col overflow-hidden rounded-2xl border ${accent.border} ${accent.hoverBorder} bg-panel p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30 focus-visible:outline-none focus-visible:ring-2 ${accent.ring}`}
     >
       {/* Accent line across the top */}
-      <span
-        className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r ${accent.bar}`}
-      />
+      <span className={`absolute inset-x-0 top-0 h-px bg-gradient-to-r`} />
 
       {/* Soft glow that fades in on hover */}
       <span
