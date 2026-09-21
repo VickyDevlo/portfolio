@@ -81,15 +81,22 @@ export const ProjectDetail = () => {
               </ul>
             </div>
 
-            <div className="flex flex-wrap gap-2">
-              {project.stack.map((t) => (
-                <span
-                  key={t}
-                  className="font-mono text-[11px] px-3 py-1.5 rounded-full border border-mistdim text-mist"
-                >
-                  {t}
-                </span>
-              ))}
+            <div>
+              <h4 className="mb-3 font-mono text-[11px] uppercase tracking-widest text-mistdim">
+                Built with
+              </h4>
+
+              <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
+                {project.stack.map((t) => (
+                  <span
+                    key={t}
+                    title={t}
+                    className="truncate rounded-full border border-mistdim px-3 py-1.5 text-center font-mono text-[11px] text-mist"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </section>

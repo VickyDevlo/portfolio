@@ -174,7 +174,7 @@ export const PROJECTS = [
     tag: "React js",
     image: "/images/carRental_app_image.png",
     liveDemo: "https://car-rental-booking-app.vercel.app",
-    desc: "Car booking app where users pick a rental date and choose from a range of available cars before confirming a booking.",
+    desc: "A car rental booking app that makes renting simple. Users pick their rental date, browse a range of available cars, and review their choice before confirming the booking, all in one smooth, guided flow.",
     stack: [
       "React",
       "Redux Toolkit",
@@ -196,7 +196,7 @@ export const PROJECTS = [
     tag: "React js",
     image: "/images/imageGenerator_app_image.png",
     liveDemo: "https://image-generator-blond.vercel.app",
-    desc: "AI-powered image generation application that allows users to create images from text prompts through a simple and intuitive interface.",
+    desc: "An AI image generator built around a simple, intuitive interface. Users describe what they want in a text prompt, hit generate, and get a unique image back. No design experience or complicated settings needed.",
     stack: ["React", "JavaScript", "REST API", "Tailwind CSS"],
     highlights: [
       "Built an intuitive interface for generating AI images from user-provided text prompts.",
@@ -212,7 +212,7 @@ export const PROJECTS = [
     tag: "React js",
     image: "/images/movies_app_image.png",
     liveDemo: "https://moviex-hub.vercel.app",
-    desc: "Movie and TV show details app for browsing and searching titles, with cast, release dates, and other details pulled through a movie database API.",
+    desc: "A movie and TV show details app built around fast search and browsing. Users look up any title, then dive into its cast, release date and other key details. All the data is fetched in real time from a movie database API.",
     stack: ["React", "Redux Toolkit", "JavaScript", "REST API", "Tailwind CSS"],
     highlights: [
       "Built a search experience for finding movies and TV shows quickly.",
@@ -408,3 +408,28 @@ export const UI5_CODE = `<mvc:View
     press="onSubmitPress"
   />
 </mvc:View>`;
+
+export const ACCENTS = {
+  react: {
+    text: "text-ember",
+    bg: "bg-ember/10",
+    border: "border-emberdim",
+    hoverBorder: "hover:border-ember/60",
+    bar: "from-ember/70 via-ember/20 to-transparent",
+    glow: "from-ember/10",
+    dot: "bg-ember",
+    arrow: "group-hover:text-ember",
+    ring: "focus-visible:ring-ember/60",
+  },
+  sap: {
+    text: "text-blue",
+    bg: "bg-blue/10",
+    border: "border-bluedim",
+    hoverBorder: "hover:border-blue/60",
+    bar: "from-blue/70 via-blue/20 to-transparent",
+    glow: "from-blue/10",
+    dot: "bg-blue",
+    arrow: "group-hover:text-blue",
+    ring: "focus-visible:ring-blue/60",
+  },
+};
