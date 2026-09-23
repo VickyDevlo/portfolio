@@ -277,6 +277,22 @@ export const PROJECTS = [
     ],
   },
   {
+    slug: "fask-flow-manager",
+    name: "Task Flow — Task Management App",
+    side: "react",
+    tag: "React js",
+    image: "/images/taskFlow_app_image.png",
+    liveDemo: "https://todo-black-five-91.vercel.app",
+    desc: "A simple and responsive todo application for creating, managing, and tracking daily tasks. Users can add tasks, mark them as completed, and manage their task list through a clean and intuitive interface.",
+    stack: ["React", "JavaScript", "Tailwind CSS"],
+    highlights: [
+      "Built a clean interface for adding and managing daily tasks.",
+      "Implemented task completion functionality for tracking finished tasks.",
+      "Created a responsive layout that works across different screen sizes.",
+      "Designed a simple and focused user experience for everyday task management.",
+    ],
+  },
+  {
     slug: "skoodio-reaction-video-platform",
     name: "Skoodio - Reaction Video Platform",
     side: "react",
