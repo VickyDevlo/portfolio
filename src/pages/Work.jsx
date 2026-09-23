@@ -10,8 +10,8 @@ export const Work = () => {
     <Reveal>
       <section className="py-10">
         <SectionHeading n="02">Selected work</SectionHeading>
-        <p className="text-sm text-center sm:text-start text-mist mb-6">
-          Things I've built, and the thinking behind them.
+        <p className="text-sm text-center font-semibold sm:text-start text-mist mb-6 tracking-widest uppercase">
+          Projects That Showcase My Skills.
         </p>
         <div className="grid sm:grid-cols-2 gap-5">
           {PROJECTS.map((p) => (
